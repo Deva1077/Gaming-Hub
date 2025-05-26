@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ultimate Gaming APK Hub</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;500&display=swap');
+
+  :root {
+    --primary-color: #1f1f2e;
+    --secondary-color: #f72585;
+    --accent-color: #720026;
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --card-bg: #292937;
+    --button-bg: #f72585;
+    --button-hover-bg: #d31068;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    padding: 1.5rem 2rem;
+    text-align: center;
+    color: var(--text-color);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px var(--secondary-color);
+    user-select: none;
+  }
+
+  .channel-section {
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(247,37,133, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .channel-photo-container {
+    flex: 1 1 250px;
+    max-width: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px var(--secondary-color);
+  }
+
+  .channel-photo-container img {
+    width: 100%;
+    display: block;
+  }
+
+  .channel-info {
+    flex: 2 1 400px;
+    color: var(--text-color);
+  }
+
+  .channel-info h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 0.3rem;
+  }
+
+  .channel-info p {
+    font-size: 1rem;
+    line-height: 1.4;
+    opacity: 0.8;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto 3rem auto;
+    padding: 0 1rem;
+  }
+
+  .search-container {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .search-container input {
+    width: 300px;
+    max-width: 90%;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 15px var(--secondary-color);
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .search-container input:focus {
+    outline: none;
+    box-shadow: 0 0 20px var(--button-bg);
+  }
+
+  .apk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    gap: 1.5rem;
+  }
+
+  .apk-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(247,37,133,0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .apk-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 30px rgba(247,37,133,0.6);
+  }
+
+  .apk-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+
+  .apk-info {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .apk-info h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Orbitron', monospace;
+    color: var(--button-bg);
+  }
+
+  .apk-info p {
+    margin: 0 0 1rem;
+    font-size: 0.9rem;
+    opacity: 0.85;
+    flex-grow: 1;
+  }
+
+  .apk-download-btn {
+    align-self: center;
+    text-decoration: none;
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    font-weight: 700;
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 9px var(--secondary-color);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+  }
+
+  .apk-download-btn:hover {
+    background-color: var(--button-hover-bg);
+    box-shadow: 0 6px 20px var(--secondary-color);
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: auto;
+  }
+</style>
+</head>
+<body>
+  <img src="image.jpg" alt="Logo for Ultimate Gaming APK Hub, featuring a stylized game controller on a dark background with neon accents, conveying an energetic and modern gaming atmosphere" id="site-logo" style="width:60px; height:auto; display:block; margin: 1rem auto;" />
+
+
+<header>Ultimate Gaming Hub</header>
+
+<section class="channel-section" aria-label="Gaming Channel">
+  <div class="channel-photo-container">
+    <img src="image.jpg" alt="Gaming Channel Banner" />
+  </div>
+  <div class="channel-info">
+    <h2>ARCnime</h2>
+    <p>Welcome to ARCnime, your go-to destination for the latest and greatest mobile games! Explore a variety of APKs, tips, and walkthroughs. Join us and level up your gaming experience!</p>
+  </div>
+</section>
+
+<main>
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search games..." aria-label="Search APK games" />
+  </div>
+  <div class="apk-grid" id="apkGrid" aria-live="polite" aria-atomic="true">
+    <!-- Game cards inserted here by JavaScript -->
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Ultimate Gaming APK Hub &nbsp;&bull;&nbsp; All rights reserved.
+</footer>
+
+<script>
+  const games = [
+    {
+      id: 1,
+      title: "MInecraft 1-21-81 apk",
+      description: "Build, Create, Survive that's the concept.",
+      image: "image2.jpg",
+      apk: "https://drive.google.com/file/d/1JKMFVNTx-NNwDghT4S623yrxxOLhU7uE/view?usp=sharing"
+    },
+  ];
+
+  function renderGames(filter = "") {
+    const grid = document.getElementById("apkGrid");
+    grid.innerHTML = "";
+    const filteredGames = games.filter(game => game.title.toLowerCase().includes(filter.toLowerCase()));
+    if(filteredGames.length === 0) {
+      grid.innerHTML = "<p style='grid-column:1/-1; text-align:center; color:#f72585; font-weight:600;'>No games found matching your search.</p>";
+      return;
+    }
+    for (const game of filteredGames) {
+      const card = document.createElement("div");
+      card.className = "apk-card";
+      card.innerHTML = `
+        <img src="${game.image}" alt="${game.title} cover image" loading="lazy" />
+        <div class="apk-info">
+          <h3>${game.title}</h3>
+          <p>${game.description}</p>
+          <a href="${game.apk}" class="apk-download-btn" download aria-label="Download ${game.title} APK">Download APK</a>
+        </div>
+      `;
+      grid.appendChild(card);
+    }
+  }
+
+  document.getElementById("searchInput").addEventListener("input", (e) => {
+    renderGames(e.target.value);
+  });
+
+  // Initial render
+  renderGames();
+</script>
+
+</body>
+</html>
+
